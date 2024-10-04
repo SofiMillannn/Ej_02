@@ -1,0 +1,72 @@
+ion-title{
+  display: flex;
+  justify-content: center;
+}
+
+ion-app{
+  --ion-background-color: #ffaff2;
+}
+
+#head{
+  display: flex;
+  justify-content: center;
+  background-color: #ffaff2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.custom-header {
+  background-color: pink;
+  height: 50px;
+}
+
+#amonChip, #yushuChip, #shanaChip {
+  width: 100px;
+  height: 50px;
+  background-color: rgba(163, 112, 255, 0.5);
+}
+
+#Amon, #Yushu, #Shana {
+  width: 40px;
+  height: 40px;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.custom-header ion-toolbar {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-header ion-title {
+  text-align: center;
+  flex: 1;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Elimina la altura 100vh */
+}
+
+ion-chip {
+  margin: 8px;
+}
+
+.main-avatar {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.chips-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+

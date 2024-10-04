@@ -1,27 +1,66 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+html, body {
+  height: 100%;
+  background-color: #ffd6f5;
   margin: 0;
+  padding: 0;
 }
 
-#container a {
-  text-decoration: none;
+ion-header {
+  --background: #ffd6f5;
+}
+
+ion-toolbar {
+  --background: #ffd6f5;
+}
+
+
+ion-alert {
+  --color: white; /* Text color for the alert */
+  --background: rgb(177, 208, 255); /* Optional: Dark background */
+}
+
+ion-alert .alert-button {
+  color: white; /* Button text color */
+}
+
+
+ion-content {
+  --background: #ffd6f5;
+}
+
+#avatar-alert {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+#avatar-alert:hover {
+ cursor: pointer;
+}
+
+#cardContainer {
+  background: #ffd6f5;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+ion-card {
+  --background: white;
+  margin: 10px 15px;
+  padding: 10px;
+}
+
+ion-label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+ion-avatar img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }

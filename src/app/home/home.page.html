@@ -1,20 +1,54 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>Inicio</ion-title>
+    <ion-avatar slot="end" id="avatar-alert">
+      <img src="../../assets/avatars/avatar01.png" alt="Avatar Principal">
+    </ion-avatar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-alert
+  id="alerta"
+  trigger="avatar-alert"
+  header="¿Deseas moverte a la página sheet?"
+  subHeader="Piénsalo bien"
+  message="Cuidadito que es una decisión importante >:D"
+  [buttons]="alertButtons">
+</ion-alert>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+  <ion-list id="cardContainer">
+    <ion-card>
+      <ion-card-content>
+        <div class="content-wrapper">
+          <ion-label>Amon</ion-label>
+          <ion-avatar slot="end" id="cardAvatar">
+            <img src="../../assets/avatars/avatar01.png" alt="Amon" height="64" width="64">
+          </ion-avatar>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <div class="content-wrapper">
+          <ion-label>Yushu</ion-label>
+          <ion-avatar slot="end">
+            <img src="../../assets/avatars/avatar02.png" alt="Yushu" height="64" width="64">
+          </ion-avatar>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <div class="content-wrapper">
+          <ion-label>Shana</ion-label>
+          <ion-avatar slot="end">
+            <img src="../../assets/avatars/avatar03.png" alt="Shana" height="64" width="64">
+          </ion-avatar>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
 </ion-content>

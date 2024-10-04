@@ -1,0 +1,36 @@
+<ion-app>
+    <ion-header class="custom-header">
+        <ion-title>Sheet</ion-title>
+    </ion-header>
+
+    <ion-content id="content">
+        <div class="center-content">
+            <div class="chips-container">
+                <ion-chip id="amonChip">
+                    <ion-avatar id="Amon">
+                        <img src="assets/avatars/avatar01.png" alt="Amon" />
+                    </ion-avatar>
+                    <ion-label>Amon</ion-label>
+                </ion-chip>
+
+                <ion-chip id="yushuChip">
+                    <ion-avatar id="Yushu">
+                        <img src="assets/avatars/avatar02.png" alt="Yushu" />
+                    </ion-avatar>
+                    <ion-label>Yushu</ion-label>
+                </ion-chip>
+
+                <ion-chip id="shanaChip">
+                    <ion-avatar id="Shana">
+                        <img src="assets/avatars/avatar03.png" alt="Shana" />
+                    </ion-avatar>
+                    <ion-label>Shana</ion-label>
+                </ion-chip>
+            </div>
+
+            <ion-avatar class="main-avatar" id="central-avatar" (click)="presentActionSheet()">
+                <img src="assets/avatars/avatar03.png" alt="Shana" id="centralAvatarImage" />
+            </ion-avatar>
+        </div>
+    </ion-content>
+</ion-app>
